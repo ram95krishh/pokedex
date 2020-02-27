@@ -1,0 +1,215 @@
+.displayScreen {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+.displayImage {
+  height: 30vh;
+  width: 30vh;
+}
+
+.infoArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.typeInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.grassTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: lightgreen;
+}
+
+.poisonTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: mediumpurple;
+}
+
+.fireTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #cd4526;
+}
+
+.flyingTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #c2be4c;
+}
+
+.iceTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #2bdbe7;
+}
+
+.waterTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #234cd5;
+}
+
+.steelTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #474a4b;
+}
+
+.electricTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #fbff00;
+}
+
+.ghostTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #bcc6c7;
+}
+
+.psychicTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #794a71;
+}
+
+.dragonTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #b33300;
+}
+
+.fairyTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #ff7dee;
+}
+
+.rockTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #7f8788;
+}
+
+.fightingTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #d2da8c;
+}
+
+.bugTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #035a2a;
+}
+
+.normalTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #fff;
+}
+
+
+.groundTypeChip {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 2px 3px 2px 3px;
+  margin: 3px;
+  background-color: #8c4c11;
+}

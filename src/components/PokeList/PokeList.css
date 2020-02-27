@@ -1,0 +1,31 @@
+.icons {
+  height: 10vh;
+  width: 10vh;
+}
+
+.pokelist {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+  height: 60vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.pokeIcon {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-style: solid;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  min-width: 20vh;
+  padding: 5px;
+  margin: 2px;
+}
+
+.iconNo {
+  float: left;
+  top: 0;
+}
