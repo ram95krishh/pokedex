@@ -7,7 +7,7 @@
   flex: 1;
   display: flex;
   overflow-y: auto;
-  height: 60vh;
+  height: 55vh;
   flex-wrap: wrap;
   flex-direction: row;
 }

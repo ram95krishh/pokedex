@@ -11,7 +11,8 @@ import TruncateWidget from '../../components/TruncateWidget';
 import DisplayScreen from '../../components/DisplayScreen';
 import PokeList from '../../components/PokeList';
 import CustomDialog from '../../components/CustomDialogBox';
-import { operations, selectors } from '../../state/ducks/feed';
+import { operations as feedOpeations, selectors as feedSelectors } from '../../state/ducks/feed';
+import { operations as widgetsOperations, selectors as widgetsSelectors } from '../../state/ducks/widgets';
 
 import './Pokedex.css';
 
@@ -120,22 +121,22 @@ class Pokedex extends Component {
 }
 
 const mapStateToProps = state => ({
-  addWidget: selectors.getAddWidgetState(state),
-  editWidget: selectors.getEditWidgetState(state),
-  pokemons: selectors.getPokemons(state),
-  truncateWidget: selectors.getTruncateWidgetState(state),
+  addWidget: widgetsSelectors.getAddWidgetState(state),
+  editWidget: widgetsSelectors.getEditWidgetState(state),
+  pokemons: feedSelectors.getPokemons(state),
+  truncateWidget: widgetsSelectors.getTruncateWidgetState(state),
 });
 
 const mapDispatchToProps = dispatch => ({
-  addPokemon: operations.addPokemon(dispatch),
-  closeTruncateWidget: operations.closeTruncateWidget(dispatch),
-  editPokemon: operations.editPokemon(dispatch),
-  openAddWidget: operations.openAddWidget(dispatch),
-  closeAddWidget: operations.closeAddWidget(dispatch),
-  openEditWidget: operations.openEditWidget(dispatch),
-  closeEditWidget: operations.closeEditWidget(dispatch),
-  openTruncateWidget: operations.openTruncateWidget(dispatch),
-  truncatePokemons: operations.truncatePokemons(dispatch),
+  addPokemon: feedOpeations.addPokemon(dispatch),
+  closeTruncateWidget: widgetsOperations.closeTruncateWidget(dispatch),
+  editPokemon: feedOpeations.editPokemon(dispatch),
+  openAddWidget: widgetsOperations.openAddWidget(dispatch),
+  closeAddWidget: widgetsOperations.closeAddWidget(dispatch),
+  openEditWidget: widgetsOperations.openEditWidget(dispatch),
+  closeEditWidget: widgetsOperations.closeEditWidget(dispatch),
+  openTruncateWidget: widgetsOperations.openTruncateWidget(dispatch),
+  truncatePokemons: feedOpeations.truncatePokemons(dispatch),
 });
 
 Pokedex.defaultProps = {
