@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux-seamless-immutable';
 import { reducers as feed } from './feed';
 
 const rootReducer = combineReducers({

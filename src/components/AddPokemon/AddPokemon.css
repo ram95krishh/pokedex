@@ -1,0 +1,19 @@
+.addPokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+  width: 40vh;
+  padding: 10px;
+}
+
+.buttonArea {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.addButton {
+  width: 40%;
+  background-color: orange;
+}

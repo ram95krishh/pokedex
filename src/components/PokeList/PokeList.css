@@ -28,4 +28,8 @@
 .iconNo {
   float: left;
   top: 0;
+  width: '10dp';
+  background-color: orange;
+  padding: 3px;
+  border-radius: 20px;
 }

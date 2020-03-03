@@ -10,6 +10,7 @@
       "React": true,
       "fetch": true,
       "window": true,
+      "isNaN": true,
       "localStorage": true
     },
     "rules": {

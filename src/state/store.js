@@ -1,9 +1,14 @@
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import logger from 'redux-logger';
+import { stateTransformer } from 'redux-seamless-immutable';
+import { createLogger } from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 
 import { reducers, sagas } from './ducks';
+
+const loggerMiddleware = createLogger({
+  stateTransformer,
+});
 
 export default function configureStore(initialState) {
   const sagaMiddleware = createSagaMiddleware();
@@ -11,7 +16,7 @@ export default function configureStore(initialState) {
   const middlewares = [sagaMiddleware];
 
   if (process.env.NODE_ENV !== 'production') {
-    middlewares.push(logger);
+    middlewares.push(loggerMiddleware);
   }
 
   const composeEnhancers = composeWithDevTools({});

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Badge from '@material-ui/core/Badge';
 // import Icon from '@material-ui/core/Icon';
 
 import './PokeList.css';
@@ -9,9 +8,9 @@ const PokeList = ({ pokemons, onItemClick }) => {
   const icons = pokemons.map((pokemon, index) => {
     const { name, id } = pokemon;
     return (
-      <div onClick={() => onItemClick(index)} onKeyDown={onItemClick} role="button" styleName="pokeIcon" tabIndex={index}>
+      <div key={pokemon.id} onClick={() => onItemClick(index)} onKeyDown={onItemClick} role="button" styleName="pokeIcon" tabIndex={index}>
         <div styleName="iconNo">
-          <Badge badgeContent={`#${id}`} color="secondary" size="small" />
+          {`#${id}`}
         </div>
         <img alt={`#${pokemon.id}`} src={pokemon.img} styleName="icons" />
         <div>{name.english}</div>

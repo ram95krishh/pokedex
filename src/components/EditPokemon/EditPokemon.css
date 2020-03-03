@@ -1,0 +1,68 @@
+.editPokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 55vh;
+  padding: 10px;
+}
+
+.buttonArea {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+.updateButton {
+  width: 40%;
+  background-color: orange;
+}
+
+.additionalField {
+  display: flex;
+  flex: 1 0 44%;
+  margin: 0.6em 0;
+  align-items: center;
+}
+
+.additionalFieldError {
+  display: flex;
+  flex: 1 0 44%;
+  margin: 0.6em 0;
+  align-items: center;
+  color: red;
+  font-weight: 200;
+}
+
+.additionalFields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameField,
+.valueField {
+  display: flex;
+  margin: 0 1em;
+}
+
+.avatarBorder {
+  border: solid;
+  border-radius: 5em;
+  width: 6em;
+  border-style: dashed;
+  margin-right: 1em;
+}
+
+.avatar {
+  width: 4em;
+  padding: 1em;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

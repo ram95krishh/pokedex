@@ -1,29 +1,18 @@
-const getEvents = state => (
-  state.events && state.events.eventList ? state.events.eventList : []
-);
+import { pathOr } from 'ramda';
 
-const getOpenEnrolState = state => (
-  state.events && state.events.dialogInfo ? state.events.dialogInfo.enrol : false
-);
+const getPokemons = state => pathOr([], ['feed', 'pokemons'], state);
 
-const getOpenCreateState = state => (
-  state.events && state.events.dialogInfo ? state.events.dialogInfo.create : false
-);
+const getAddWidgetState = state => pathOr(false, ['feed', 'openAddWidget'], state);
 
-const getSnackBarState = state => state.events && state.events.snackBarData;
+const getEditWidgetState = state => pathOr(false, ['feed', 'openEditWidget'], state);
 
-const getOpenEnrollments = state => (
-  state.events && state.events.dialogInfo ? state.events.dialogInfo.enrollments : false
-);
-const getEnrollments = state => state.events && state.events.enrollments;
+const getTruncateWidgetState = state => pathOr(false, ['feed', 'openTruncateWidget'], state);
 
 const selectors = {
-  getEvents,
-  getOpenEnrolState,
-  getOpenEnrollments,
-  getOpenCreateState,
-  getEnrollments,
-  getSnackBarState,
+  getPokemons,
+  getAddWidgetState,
+  getEditWidgetState,
+  getTruncateWidgetState,
 };
 
 export default selectors;
