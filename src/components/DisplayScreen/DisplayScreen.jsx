@@ -17,7 +17,7 @@ class DisplayScreen extends Component {
     } = this.props;
     if (!attack) return null;
     const typeChips = types.map(type => (
-      <div key={type} styleName={`${type.toLowerCase()}TypeChip`}>
+      <div key={type} styleName={`baseTypeChip ${type.toLowerCase()}TypeChip`}>
         {type}
       </div>
     ));

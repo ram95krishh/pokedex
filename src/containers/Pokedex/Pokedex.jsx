@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { pathOr } from 'ramda';
-import AddIcon from '@material-ui/icons/Add';
-import DeleteIcon from '@material-ui/icons/Delete';
 
+import Header from '../../components/Header';
 import AddPokemon from '../../components/AddPokemon';
 import EditPokemon from '../../components/EditPokemon';
 import TruncateWidget from '../../components/TruncateWidget';
+
 import DisplayScreen from '../../components/DisplayScreen';
 import PokeList from '../../components/PokeList';
 import CustomDialog from '../../components/CustomDialogBox';
@@ -57,21 +57,7 @@ class Pokedex extends Component {
 
     return (
       <div>
-        <h1 styleName="title">Pokedex</h1>
-        <div onClick={openAddWidget} onKeyDown={openAddWidget} role="button" styleName="addIconArea" tabIndex={0}>
-          <div styleName="iconBorder">
-            Add Pokemon
-            {'    '}
-            <AddIcon styleName="addIcon" />
-          </div>
-        </div>
-        <div onClick={openTruncateWidget} onKeyDown={openTruncateWidget} role="button" styleName="deleteIconArea" tabIndex={0}>
-          <div styleName="iconBorder">
-            Truncate
-            {'    '}
-            <DeleteIcon styleName="deleteIcon" />
-          </div>
-        </div>
+        <Header openAddWidget={openAddWidget} openTruncateWidget={openTruncateWidget} />
         <DisplayScreen
           additionalFields={additionalFields}
           attack={attack}
