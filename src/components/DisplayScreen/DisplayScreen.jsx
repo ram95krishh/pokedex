@@ -24,12 +24,14 @@ class DisplayScreen extends Component {
     ));
     return (
       <div styleName="displayScreen">
-        <div onClick={openEditWidget} onKeyDown={openEditWidget} role="button" styleName="editIconArea">
-          <div styleName="iconBorder">
-            Add stats
-            <EditIcon styleName="editIcon" />
+        {openEditWidget ? (
+          <div onClick={openEditWidget} onKeyDown={openEditWidget} role="button" styleName="editIconArea">
+            <div styleName="iconBorder">
+              Add stats
+              <EditIcon styleName="editIcon" />
+            </div>
           </div>
-        </div>
+        ) : null}
         <img
           alt="info"
           src={img}

@@ -9,6 +9,7 @@
   border-style: solid;
   margin: 1em;
   margin-top: 2em;
+  padding: 1em;
 }
 
 .displayImage {
@@ -114,7 +115,7 @@
   align-items: center;
   margin-right: 10px;
   margin-top: 10px;
-  top: 4em;
+  top: 7em;
   right: 3em;
 }
 
@@ -148,6 +149,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 35vw;
+  margin-left: 1em;
 }
 
 .fields {

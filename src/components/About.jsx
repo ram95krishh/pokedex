@@ -9,8 +9,8 @@ class About extends Component {
   render() {
     return (
       <div>
+        <h1> POKEDEX </h1>
         Pokedex built as a part of Refrens assessment!
-        Hello world
       </div>
     );
   }

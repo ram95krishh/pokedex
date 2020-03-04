@@ -5,6 +5,10 @@
   height: 95vh;
 }
 
+.searchButton {
+  margin-top: 0.5em;
+}
+
 .addIconArea {
   display: flex;
   position: absolute;

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { pathOr } from 'ramda';
+import SearchIcon from '@material-ui/icons/Search';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 import Header from '../../components/Header';
 import AddPokemon from '../../components/AddPokemon';
@@ -67,6 +70,17 @@ class Pokedex extends Component {
     return (
       <div styleName="pokedex">
         <Header openAddWidget={openAddWidget} openTruncateWidget={openTruncateWidget} />
+        <div styleName="searchButton">
+          <Link to="/search">
+            <Button
+              color="secondary"
+              startIcon={<SearchIcon />}
+              variant="contained"
+            >
+              Search pokemons
+            </Button>
+          </Link>
+        </div>
         <DisplayScreen
           additionalFields={additionalFields}
           attack={attack}

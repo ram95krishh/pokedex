@@ -3,11 +3,6 @@
   width: 10vh;
 }
 
-.pokeIcon:focus {
-  outline: none;
-  border: solid;
-}
-
 .pokelist {
   flex: 1;
   display: flex;
@@ -15,10 +10,12 @@
   height: 55vh;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .pokeIcon {
   display: flex;
+  box-sizing: border-box;
   flex: 1;
   flex-direction: column;
   border-style: solid;
@@ -26,8 +23,14 @@
   justify-content: center;
   border-width: 1px;
   min-width: 20vh;
+  max-width: 20vh;
   padding: 5px;
   margin: 2px;
+}
+
+.pokeIcon:focus {
+  outline: none;
+  border: solid;
 }
 
 .iconNo {

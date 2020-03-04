@@ -13,7 +13,7 @@ const defaultOptions = {
 };
 
 const SplashScreen = () => (
-  <>
+  <div styleName="splashScreen">
     <div styleName="titleArea">
       <h1 styleName="title">
         POKEDEX
@@ -29,7 +29,7 @@ const SplashScreen = () => (
     <div styleName="subHeading">
       Gotta catch em all!
     </div>
-  </>
+  </div>
 );
 
 export default SplashScreen;
