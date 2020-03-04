@@ -3,6 +3,11 @@
   width: 10vh;
 }
 
+.pokeIcon:focus {
+  outline: none;
+  border: solid;
+}
+
 .pokelist {
   flex: 1;
   display: flex;

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import EditIcon from '@material-ui/icons/Edit';
@@ -23,7 +24,7 @@ class DisplayScreen extends Component {
     ));
     return (
       <div styleName="displayScreen">
-        <div onClick={openEditWidget} onKeyDown={openEditWidget} role="button" styleName="editIconArea" tabIndex={0}>
+        <div onClick={openEditWidget} onKeyDown={openEditWidget} role="button" styleName="editIconArea">
           <div styleName="iconBorder">
             Add stats
             <EditIcon styleName="editIcon" />

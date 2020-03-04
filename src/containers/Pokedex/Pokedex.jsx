@@ -21,6 +21,7 @@ class Pokedex extends Component {
     super(props);
     this.state = { selected: 0 };
     this.changeSelected = this.changeSelected.bind(this);
+    this.handleTruncate = this.handleTruncate.bind(this);
   }
 
   changeSelected(index) {
@@ -28,6 +29,15 @@ class Pokedex extends Component {
     if (!isNaN(index)) {
       this.setState({ selected: index });
     }
+  }
+
+  handleTruncate() {
+    const { truncatePokemons } = this.props;
+    const { selected } = this.state;
+    if (selected > 150) {
+      this.setState({ selected: 0 });
+    }
+    truncatePokemons();
   }
 
   render() {
@@ -45,7 +55,6 @@ class Pokedex extends Component {
       openTruncateWidget,
       closeTruncateWidget,
       truncateWidget,
-      truncatePokemons,
     } = this.props;
     const pokemonSelected = pokemons[selected] || {};
     const {
@@ -56,7 +65,7 @@ class Pokedex extends Component {
     const name = pathOr('', ['name', 'english'], pokemonSelected);
 
     return (
-      <div>
+      <div styleName="pokedex">
         <Header openAddWidget={openAddWidget} openTruncateWidget={openTruncateWidget} />
         <DisplayScreen
           additionalFields={additionalFields}
@@ -94,7 +103,7 @@ class Pokedex extends Component {
           component={(
             <TruncateWidget
               handleClose={closeTruncateWidget}
-              truncatePokemons={truncatePokemons}
+              truncatePokemons={this.handleTruncate}
             />
           )}
           handleClose={closeTruncateWidget}
